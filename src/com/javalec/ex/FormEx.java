@@ -40,6 +40,9 @@ public class FormEx extends HttpServlet {
 		// TODO Auto-generated method stub
 		System.out.println("doPost");
 		
+		//post 방식 한글 인코딩 추가
+		request.setCharacterEncoding("EUC-KR");
+		
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
 		
